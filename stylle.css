@@ -1,0 +1,48 @@
+@keyframes opening {
+    0% {height: 10px; padding: 0 50px ; font-size: 0px;}
+    25% {height: 25px; padding:2.25px 50px ; font-size: 5px;}
+    50% {height: 50px;padding: 5px 50px; font-size: 10px;}
+    75% {height: 75px;padding: 7.75px 50px; font-size: 15px;}
+    100% {height: 100px;padding:10px 50px; font-size: 20px;}
+}
+
+body {
+    color: white;
+}
+
+.main{
+    display: flex;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;   
+    background-color: #FF6F59;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 50px 20px 50px;
+    justify-content: space-around;
+    border-bottom: 20px solid #DB504A;
+
+    font-size: larger;
+}
+.hidden{
+    width: 700Px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10px;   
+    background-color: #DB504A;
+    font-size: 0px;
+}
+
+.hidden:hover {
+    width: 600px;
+    padding:10px 50px;
+    height: 100px;
+    font-size: 20px;
+    background-color:  #DB504A;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: opening;
+    animation-duration: 0.25s;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
